@@ -1523,7 +1523,7 @@ h6 {
 
 @media screen and (max-width: 736px) {
 
-	h1 {
+	h1{
 		font-size: 1.75em;
 	}
 
@@ -1537,7 +1537,7 @@ h6 {
 	h6 {
 		font-size: 1em;
 	}
-
+	
 }
 
 blockquote {
@@ -1984,8 +1984,9 @@ ul.actions li:first-child {
 	-webkit-transition: opacity .25s ease-in-out;
 	-ms-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
-	width: 5.5em;
+	/* width: fit-content; */
 	margin-left: -2.75em;
+	padding: 0 4px;
 }
 
 #nav a span:after {
@@ -2264,8 +2265,11 @@ body.is-preload #wrapper {
 	letter-spacing: -0.015em;
 	font-size: 1.25em;
 	margin: 0.25em 0 0 0;
-	text-align: justify;
 	color: rgb(33, 33, 33);
+}
+
+#main>.panel.intro header .title + p{
+	text-align: justify;
 }
 
 @media screen and (max-width: 980px) {
@@ -2382,6 +2386,20 @@ body.is-preload #wrapper {
 	position: absolute;
 	bottom: 0;
 }
+
+@media screen and (max-width: 736px) {
+
+	.stack {
+	position: relative;
+	margin-top: 10px;
+}
+
+	#main>.panel.intro header .title{
+		font-size: 1.5em;
+	}
+}
+
+
 
 a.icon.fa-home::before,
 a.icon.fa-folder::before,
