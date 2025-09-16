@@ -1500,7 +1500,7 @@ h4,
 h5,
 h6 {
 	font-weight: 400;
-			color: rgb(1, 1, 185);
+	color: rgb(1, 1, 185);
 }
 
 h1 {
@@ -1523,7 +1523,7 @@ h6 {
 
 @media screen and (max-width: 736px) {
 
-	h1{
+	h1 {
 		font-size: 1.75em;
 	}
 
@@ -1537,7 +1537,7 @@ h6 {
 	h6 {
 		font-size: 1em;
 	}
-	
+
 }
 
 blockquote {
@@ -1986,7 +1986,7 @@ ul.actions li:first-child {
 	-ms-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
 	margin-left: -2.75em;
-	width:max-content;
+	width: max-content;
 	padding: 0 4px;
 	border-radius: 6px;
 }
@@ -2204,8 +2204,9 @@ body.is-preload #wrapper {
 	margin-top: -1.375em;
 	width: 2.75em;
 	height: 2.75em;
-	background: #000;
-	background: rgba(0, 0, 0, 0.75);
+	background: #04048365;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 2.75em;
@@ -2270,7 +2271,7 @@ body.is-preload #wrapper {
 	color: rgb(33, 33, 33);
 }
 
-#main>.panel.intro header .title + p{
+#main>.panel.intro header .title+p {
 	text-align: justify;
 }
 
@@ -2323,7 +2324,7 @@ body.is-preload #wrapper {
 }
 
 #footer a {
-	color:  rgb(6, 0, 169);
+	color: rgb(6, 0, 169);
 	text-decoration: none;
 	-moz-transition: color .25s ease-in-out;
 	-webkit-transition: color .25s ease-in-out;
@@ -2381,23 +2382,18 @@ body.is-preload #wrapper {
 }
 
 .project_container {
-	min-height: 140px;
 	position: relative;
 }
 
-.stack {
-	/* position: absolute;
-	bottom: 0; */
-}
 
 @media screen and (max-width: 736px) {
 
 	.stack {
-	position: relative;
-	margin-top: 10px;
-}
+		position: relative;
+		margin-top: 10px;
+	}
 
-	#main>.panel.intro header .title{
+	#main>.panel.intro header .title {
 		font-size: 1.5em;
 	}
 }
@@ -2433,20 +2429,20 @@ a.icon.fa-envelope::before {
 }
 
 #skill ul li {
-  color: rgb(47, 47, 47);
-  word-spacing: .3ch;
-  font-size: 1.4rem;
+	color: rgb(47, 47, 47);
+	word-spacing: .3ch;
+	font-size: 1.4rem;
 }
 
 #skill ul li::marker {
-  content: '◎';
-  color: rgb(43, 7, 204);
+	content: '◎';
+	color: rgb(43, 7, 204);
 }
 
-#main>.panel.intro header #location{
+#main>.panel.intro header #location {
 	margin-top: 0.6rem;
 }
 
-.bold{
-		font-weight: 500;
+.bold {
+	font-weight: 500;
 }
