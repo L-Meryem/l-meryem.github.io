@@ -2259,7 +2259,7 @@ body.is-preload #wrapper {
 
 #main>.panel.intro header .title {
 	font-size: 2rem;
-	color: black;
+	color: rgb(15, 0, 125);
 	margin-bottom: 15px;
 }
 
@@ -2441,4 +2441,12 @@ a.icon.fa-envelope::before {
 #skill ul li::marker {
   content: '◎';
   color: rgb(43, 7, 204);
+}
+
+#main>.panel.intro header #location{
+	margin-top: 0.6rem;
+}
+
+.bold{
+		font-weight: 500;
 }
