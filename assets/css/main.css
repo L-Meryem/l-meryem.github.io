@@ -1704,14 +1704,12 @@ header>p {
 .image img {
 	display: block;
 	width: 100%;
-	height: 200px;
 	object-fit: fill;
 }
 
 .image.fit {
 	display: block;
 	width: 100%;
-	max-width: 355px;
 }
 
 .image.featured {
