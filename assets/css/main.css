@@ -1704,7 +1704,8 @@ header>p {
 .image img {
 	display: block;
 	width: 100%;
-	object-fit: fill;
+	height: 200px;
+	object-fit: contain;
 }
 
 .image.fit {
@@ -2412,12 +2413,17 @@ a.icon.fa-envelope::before {
 }
 
 .rainbow-box {
-	background-color: #302244;
+	background-color: rgb(255, 255, 255);
+	opacity: 0.9;
 	border: 2.5px solid transparent;
 	border-image: linear-gradient(to bottom right, #190fdd 0%, #2c90fc 25%, #6814cf 75%, #fd1892 100%);
 	border-image-slice: 1;
 	margin-bottom: 5px;
 	width: 200px;
+}
+
+.wip{
+	background-color: rgba(199, 50, 124, 0.72);
 }
 
 .rainbow-text {
