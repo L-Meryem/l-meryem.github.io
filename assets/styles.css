@@ -130,6 +130,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
     opacity: .9;
+    border: 2px solid var(--accent-color);
+    padding: .3rem;
 }
 
 .about-wrapper {
@@ -214,7 +216,6 @@ body {
 }
 
 .project-links a {
-    font-weight: bold;
     color: var(--accent-color);
     opacity: .9;
 }
