@@ -149,6 +149,10 @@ body {
     gap: 2rem;
 }
 
+.about span{
+    color: var(--accent-color);
+}
+
 
 .location {
     display: flex;
@@ -261,9 +265,9 @@ body {
     display: inline-block;
     font-size: .8rem;
     color: var(--gray-color);
-    border: 1px solid var(--accent-color-transparent);
+    border: 1px dashed var(--accent-color-transparent);
     border-radius: .5rem;
-    padding: .05rem .4rem;
+    padding: .08rem .4rem;
     margin-top: .5rem;
 }
 
