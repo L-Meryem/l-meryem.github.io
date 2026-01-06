@@ -111,7 +111,7 @@ h6 {
     --accent-color-transparent: rgba(246, 231, 22, 0.579);
     --white-color: white;
     --black-color: rgb(25, 29, 35);
-    --gray-color: rgb(132, 154, 177);
+    --gray-color: rgb(134, 163, 194);
 }
 
 body {
@@ -223,21 +223,28 @@ body {
 
 .project-name {
     display: block;
-    font-weight: 700;
-    padding: .5rem 0;
+    font-weight: normal;
+    padding: .2rem 0;
+    margin-left: .5rem;
     font-size: 1rem;
 }
 
 .project-links {
-    position: absolute;
-    top: 9px;
-    right: 0;
+    position: absolute; 
+    top: 5px;
+    right: 6px;
     font-size: 1rem;
 }
 
 .project-links a {
     color: var(--accent-color);
     opacity: .9;
+    border-top: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+    border-top-left-radius:  .5rem;
+    border-top-right-radius:  .5rem;
+    padding: 0.1rem .2rem;
 }
 
 .project-links a:hover {
