@@ -294,6 +294,12 @@ footer .heart {
     color: var(--accent-color);
 }
 
+footer .copyright{
+    font-size: 1.2rem;
+    position: relative;
+    top:6px;
+}
+
 /* ---------- */
 
 @media screen and (width < 899px) {
