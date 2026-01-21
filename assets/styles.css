@@ -193,7 +193,7 @@ body {
     font-size: .6rem;
     color: var(--gray-color);
     margin-top: .2rem;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .skills ul {
@@ -306,6 +306,66 @@ footer {
     color: var(--gray-color);
 }
 
+.blog {
+    width: 100%;
+    display: flex;
+    border-top: .4rem solid var(--accent-color);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.blog-logo {
+    height: 10rem;
+    display: flex;
+}
+
+.blog-logo .laptop {
+    height: 100%;
+    transform: rotate(1deg);
+    float: right;
+    object-fit: contain;
+    margin-left: -6.8rem;
+    opacity: .8;
+}
+
+.dog {
+    filter: invert(1);
+    height: 3rem;
+    float: right;
+}
+
+.blog-logo h1 {
+    font-size: 2.7rem;
+    text-align: left;
+    color: var(--accent-color);
+    transform: rotate(-90deg);
+    display: inline;
+    margin-left: -1rem;
+}
+
+.blog-content {
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-content h2 {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+}
+
+.blog-content p {
+    color: var(--white-color);
+    font-size: .9rem;
+}
+
+.blog-content small {
+    color: var(--gray-color);
+    font-size: .7rem;
+    text-align: right;
+}
+
 footer .heart {
     color: var(--accent-color);
 }
@@ -317,6 +377,15 @@ footer .copyright {
 }
 
 /* ---------- */
+
+@media screen and (width < 1008px) {
+    .blog{
+        flex-direction: column;
+    }
+    .content-wrapper{
+        margin-top: 1.5rem;
+    }
+}
 
 @media screen and (width < 899px) {
     .about-wrapper {
