@@ -59,7 +59,7 @@ p {
 }
 
 a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -109,9 +109,10 @@ h6 {
 :root {
     --accent-color: rgb(246, 231, 22);
     --accent-color-transparent: rgba(246, 231, 22, 0.579);
-    --white-color: white;
+    --white-color:  rgb(212, 212, 212);
     --black-color: rgb(25, 29, 35);
     --gray-color: rgb(134, 163, 194);
+    --blue-color: rgb(47, 113, 229);
 }
 
 body {
@@ -211,7 +212,7 @@ body {
     color: var(--black-color);
 }
 
-/* Projects start */
+/* PROJECTS */
 
 .projects {
     display: grid;
@@ -297,14 +298,9 @@ body {
     height: 100%;
 }
 
-/* Projects end */
+/* PROJECTS END*/
 
-footer {
-    margin-top: 2rem;
-    text-align: center;
-    font-size: .8rem;
-    color: var(--gray-color);
-}
+/*  BLOG */
 
 .blog {
     width: 100%;
@@ -317,10 +313,12 @@ footer {
 .blog-logo {
     height: 10rem;
     display: flex;
+    min-width: 270px;
+    max-height: 165px;
+    position: relative;
 }
 
 .blog-logo .laptop {
-    height: 100%;
     transform: rotate(1deg);
     float: right;
     object-fit: contain;
@@ -345,25 +343,39 @@ footer {
 
 .blog-content {
     text-align: left;
-    padding-left: 1rem;
-    padding-top: .5rem;
+    padding: .5rem 0;
     margin-bottom: 1rem;
 }
 
-.blog-content h2 {
-    font-size: 1.4rem;
-    color: var(--accent-color);
-}
-
-.blog-content p {
-    color: var(--white-color);
-    font-size: .9rem;
-}
-
-.blog-content small {
+.blog-content .title {
+    font-size: 1.3rem;
     color: var(--gray-color);
+    border-bottom: 1px solid var(--accent-color);
+    margin-bottom: .5rem;
+}
+
+.blog-content .content {
+    font-size: 1rem;
+    padding: .5rem 0;
+}
+
+.blog-content .date {
+    color: var(--gray-color);
+    display: block;
     font-size: .7rem;
     text-align: right;
+}
+
+/*  BLOG  END */
+
+/* FOOTER */
+
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: .8rem;
+    color: var(--gray-color);
 }
 
 footer .heart {
@@ -376,13 +388,20 @@ footer .copyright {
     top: 6px;
 }
 
+footer a{
+    color: var(--gray-color);
+}
+
+/* FOOTER END*/
+
 /* ---------- */
 
 @media screen and (width < 1008px) {
-    .blog{
+    .blog {
         flex-direction: column;
     }
-    .content-wrapper{
+
+    .content-wrapper {
         margin-top: 1.5rem;
     }
 }
